@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://cdn.pixabay.com/photo/2015/11/05/08/21/geometry-1023846_960_720.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  margin: auto;
+}
+
+.calci {
+  background-color: white;
+  color: black;
+  position: relative;
+  max-width: 375px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0),
+    inset 10px 10px 15px rgb(199, 199, 199),inset -10px -10px 15px rgb(168, 168, 168);
+}
+
+.calci .buttons {
+  position: relative;
+  display: grid;
+}
+
+.calci .buttons #value {
+  position: relative;
+  grid-column: span 4;
+  user-select: none;
+  overflow: none;
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100px;
+  text-align: end;
+  line-height: 100px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 10px #464545;
+  border-radius: 15px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.calci .buttons span {
+  position: relative;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px #fff;
+  margin: 10px;
+  user-select: none;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.calci .buttons span:active {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px white;
+  color: red;
+}
+
+.calci .buttons span#clear {
+  grid-column: span 2;
+  background-color: red;
+  box-shadow: 10px 10px 10px rgb(255, 0, 0);
+}
+
+.calci .buttons span#plus {
+  grid-row: span 2;
+  background-color: green;
+  color: ghostwhite;
+}
+
+.calci .buttons span#equal {
+  grid-row: span 2;
+  background-color: rgb(17, 0, 252);
+  color: ghostwhite;
+}
+
+.calci .buttons span#clear,
+.calci .buttons span#plus,
+.calci .buttons span#equal {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px ghostwhite,
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
