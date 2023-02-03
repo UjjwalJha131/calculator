@@ -16,7 +16,7 @@ for(let i=0; i<btn.length; i++) {
             else {
             value.innerHTML += this.innerHTML;
             }
-        }
-    })
+        };
+    });
 
-}
+};
