@@ -16,19 +16,26 @@ body {
   align-items: center;
   min-height: 100vh;
   background-size: cover;
-  margin: auto;
+
 }
 
 .calci {
   background-color: white;
   color: black;
   position: relative;
-  max-width: 375px;
+  min-width: 350px;
   width: 100%;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 5px 5px 15px rgb(0, 0, 0),
     inset 10px 10px 15px rgb(199, 199, 199),inset -10px -10px 15px rgb(168, 168, 168);
+}
+
+@media screen and (max-width:500px) {
+    .calci {
+        width: auto;
+        margin: 0 15px !important
+    }
 }
 
 .calci .buttons {
