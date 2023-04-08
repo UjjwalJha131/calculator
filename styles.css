@@ -36,7 +36,7 @@ body {
 @media screen and (max-width:450px) {
     .calci {
         width: auto;
-        margin: 0 15px !important
+        margin: auto !important
     }
 }
 
